@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor='lightgreen'>
+ {% csrf_token %}
+<center>
+    <h1>BIX Student's Information</h1>
+</center>
+<table bgcolor="pink" border="5" width="100%">
+    <thead>
+        <th>student Name </th>
+        <th>student Mobile_No </th>
+        <th>student Email </th>
+        <th>student Course </th>
+
+     </thead>
+    {% for i in studentInfo %}
+    <tr>
+        <td> {{i.name}}</td>
+        <td> {{i.mobile_no}}</td>
+        <td> {{i.email}}</td>
+        <td> {{i.course}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

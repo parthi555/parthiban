@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="violet">
+	<center>
+	<h1>Enquory  Form</h1>
+	<hr>
+<form action="" method="post">
+	{% csrf_token %}
+	Enter your Name : <input id="your_name" type="text" name="your_name" ><br><br>
+    Enter your Mobile No :<input id="your_mobile_no" type="text" name="your_mobile_no" ><br><br>
+    Enter your Email :<input id="your_email" type="text" name="your_email" ><br><br>
+    Enter your course Name :<input id="your_course" type="text" name="your_course" ><br><br>
+	<input type="submit" value="Sign Up" name="enquiry">
+	<input type="reset" value="Cancel" name="enquiry">
+
+</form>
+</center>
+</body>
+</html>
